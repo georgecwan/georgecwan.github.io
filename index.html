@@ -14,15 +14,12 @@
     var audio = document.getElementById("audio");
     audio.play();
   }
-  function newbg() {
-    document.getElementById("html").style.background = "url('./static/giphy.gif')";
-    document.getElementById("html").style.backgroundSize = cover;
-  }
 </script>
 <body>
     <div class="header">
         <h1>FOR MEOWNY</h1>
     </div>
+    <img src="./static/giphy.gif" id="gif" style="display:none;">
     <div class="box">
         <input type="text" class="input" name="item">
         <i class="fas fa-search"></i>
@@ -30,8 +27,14 @@
     <button type="submit" value="PLAY" onclick="play()"
             style="left: 10%; top: 80%">Turn on audio then click!</button>
     <br>
-    <button type="submit" onclick="newbg(); alert();" style="right: 10%; top: 80%">
+    <button type="submit" onclick="document.getElementById('gif').style.display='block';" style="right: 10%; top: 80%">
       The search bar does nothing but it's cool</button>
     <audio id="audio" src="./static/videoplayback.mp3"></audio>
+<script>
+  alert('I was going to do more stuff (with the search bar and stuff) but ran out of time and ideas and also stuff I thought of was too hard or didn\'t work: (');
+  window.onbeforeunload = function(e) {
+     return 'Dialog text here.';
+  };
+</script>
 </body>
 </html>
