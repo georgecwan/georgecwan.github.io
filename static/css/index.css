@@ -16,6 +16,7 @@ h1 {
     text-transform: uppercase;
 }
 .box{
+		z-index: -1;
     position: absolute;
     top: 49.5%;
     left: 50%;
@@ -53,6 +54,12 @@ i{
 .box:hover i{
     opacity: 0;
     z-index: -1;
+}
+
+img {
+	margin: auto auto;
+  height: 30%;
+	z-index: 100;
 }
 
 button {
