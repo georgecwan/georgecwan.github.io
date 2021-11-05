@@ -14,11 +14,7 @@
     var audio = document.getElementById("audio");
     audio.play();
   }
-</script>
-<script>
   function newbg() {
-    alert("I would've made the search bar actually do something other than
-    look cool but I ran out of time and ideas");
     document.getElementById("html").style.background = "url('./static/giphy.gif')";
     document.getElementById("html").style.backgroundSize = cover;
   }
@@ -34,7 +30,7 @@
     <button type="submit" value="PLAY" onclick="play()"
             style="left: 10%; top: 80%">Turn on audio then click!</button>
     <br>
-    <button type="submit" onclick=newbg(); style="right: 10%; top: 80%">
+    <button type="submit" onclick="newbg(); alert();" style="right: 10%; top: 80%">
       The search bar does nothing but it's cool</button>
     <audio id="audio" src="./static/videoplayback.mp3"></audio>
 </body>
