@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <title>FOR MEOWNY</title>
+    <link rel="stylesheet" href="./static/css/index.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+</style>
+<script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
+<script>
+  function play() {
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
+</script>
+<script>
+  function newbg() {
+   document.getElementById("html").style.background = "url('./static/giphy.gif')";
+   document.getElementById("html").style.backgroundSize = cover;
+ }
+</script>
+<body>
+    <div class="header">
+        <h1>FOR MEOWNY</h1>
+    </div>
+    <div class="box">
+        <input type="text" class="input" name="item">
+        <i class="fas fa-search"></i>
+    </div>
+    <button type="submit" value="PLAY" onclick="play()"
+            style="left: 10%; top: 80%">Turn on audio then click!</button>
+    <br>
+    <button type="submit" onclick=newbg(); style="right: 10%; top: 80%">
+      The search bar does nothing but this button does stuff</button>
+    <audio id="audio" src="./static/videoplayback.mp3"></audio>
+</body>
+</html>
