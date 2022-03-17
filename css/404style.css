@@ -22,7 +22,7 @@ body {
 h1 {
   margin: 0;
 }
-a {
+a, p {
   color: hsl(0, 0%, calc((100 - var(--light)) * 1%));
   font-weight: bold;
 }
