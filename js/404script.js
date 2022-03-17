@@ -174,9 +174,16 @@ const CodeMessage = styled(GlitchyText)`
   }
 `;
 
+const Text = styled.p`
+  grid-column: span 2;
+  grid-row: 0;
+  text-align: center;
+  margin: 2rem auto;
+`;
+
 const Message = styled.a`
   grid-column: span 2;
-  grid-row: -1;
+  grid-row: 0;
   text-align: center;
   margin: 2rem auto;
 
@@ -209,12 +216,12 @@ const FourOhFour = () => {
   return /*#__PURE__*/(
     React.createElement(AppShell, null, /*#__PURE__*/
     React.createElement(Container, null, /*#__PURE__*/
-    React.createElement(Message, { className: "return-link", href: "/#", rel: "noreferrer noopener" }, "Return to happiness"), /*#__PURE__*/
-
-
-    React.createElement(Logo, { className: "bear-logo--tears" }), /*#__PURE__*/
-    React.createElement(Code, { className: "four-oh-four__code" }, "404"), /*#__PURE__*/
-    React.createElement(CodeMessage, { className: "four-oh-four__code-message" }, "Not found"))));
+      React.createElement(Logo, { className: "bear-logo--tears" }), /*#__PURE__*/
+      React.createElement(Code, { className: "four-oh-four__code" }, "404"), /*#__PURE__*/
+      React.createElement(CodeMessage, { className: "four-oh-four__code-message" }, "Not found"),
+      React.createElement(Text, null, "Sorry! The page you are looking for doesn't exist."),
+      React.createElement(Message, { className: "return-link", href: "/", rel: "noreferrer noopener" }, "Return to Home Page")
+    )));
 
 
 
