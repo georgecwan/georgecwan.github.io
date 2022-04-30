@@ -1,3 +1,114 @@
+:root {
+  --htmlafter: white;
+}
+
+/* BUTTON */
+
+#start {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 50;
+}
+
+button {
+	 position: relative;
+	 display: inline-block;
+	 padding: 30px 61px;
+	 border-radius: 4px;
+	 color: #d2bdff;
+	 text-decoration: none;
+	 text-transform: uppercase;
+	 overflow: hidden;
+	 margin: 10px;
+	 font-family: "Roboto", sans-serif;
+   font-size: 50px;
+	 border: 2px solid #d2bdff;
+	 transition: all 0.1s linear;
+}
+ button:hover {
+	 border: 1px solid transparent;
+}
+ button:hover span {
+	 position: absolute;
+	 display: block;
+}
+ button:hover span:nth-child(1) {
+	 filter: hue-rotate(0deg);
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 3px;
+	 background: linear-gradient(90deg, transparent, #3a86ff);
+	 animation: animate1 1s linear infinite;
+}
+ @keyframes animate1 {
+	 0% {
+		 left: -100%;
+	}
+	 50%, 100% {
+		 left: 100%;
+	}
+}
+ button:hover span:nth-child(2) {
+	 filter: hue-rotate(60deg);
+	 top: -100%;
+	 right: 0;
+	 width: 3px;
+	 height: 100%;
+	 background: linear-gradient(180deg, transparent, #3a86ff);
+	 animation: animate2 1s linear infinite;
+	 animation-delay: 0.25s;
+}
+ @keyframes animate2 {
+	 0% {
+		 top: -100%;
+	}
+	 50%, 100% {
+		 top: 100%;
+	}
+}
+ button:hover span:nth-child(3) {
+	 filter: hue-rotate(120deg);
+	 bottom: 0;
+	 right: 0;
+	 width: 100%;
+	 background: linear-gradient(270deg, transparent, #3a86ff);
+	 animation: animate3 1s linear infinite;
+	 animation-delay: 0.5s;
+}
+ @keyframes animate3 {
+	 0% {
+		 right: -100%;
+		 height: 3px;
+	}
+	 50%, 100% {
+		 height: 2px;
+		 right: 100%;
+	}
+}
+ button:hover span:nth-child(4) {
+	 filter: hue-rotate(300deg);
+	 bottom: -100%;
+	 left: 0;
+	 width: 3px;
+	 height: 100%;
+	 background: linear-gradient(360deg, transparent, #3a86ff);
+	 animation: animate4 1s linear infinite;
+	 animation-delay: 0.75s;
+}
+ @keyframes animate4 {
+	 0% {
+		 bottom: -100%;
+	}
+	 50%, 100% {
+		 bottom: 100%;
+	}
+}
+
+
 /* For the confetti */
 
 .confetti {
@@ -8,7 +119,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 30;
 }
 .confetti-piece {
     position: absolute;
@@ -24,6 +135,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 2182ms;
     -webkit-animation-duration: 1516ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(2) {
     left: 14%;
@@ -31,6 +143,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 2161ms;
     -webkit-animation-duration: 1476ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(3) {
     left: 21%;
@@ -38,6 +151,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 2481ms;
     -webkit-animation-duration: 1503ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(4) {
     left: 28%;
@@ -45,6 +159,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 2334ms;
     -webkit-animation-duration: 1108ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(5) {
     left: 35%;
@@ -52,6 +167,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 2302ms;
     -webkit-animation-duration: 776ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(6) {
     left: 42%;
@@ -59,6 +175,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 2180ms;
     -webkit-animation-duration: 1168ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(7) {
     left: 49%;
@@ -66,6 +183,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 2395ms;
     -webkit-animation-duration: 1700ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(8) {
     left: 56%;
@@ -73,6 +191,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 214ms;
     -webkit-animation-duration: 1287ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(9) {
     left: 63%;
@@ -80,6 +199,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 2149ms;
     -webkit-animation-duration: 1205ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(10) {
     left: 70%;
@@ -87,6 +207,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 2351ms;
     -webkit-animation-duration: 1459ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(11) {
     left: 77%;
@@ -94,6 +215,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 2307ms;
     -webkit-animation-duration: 1532ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(12) {
     left: 84%;
@@ -101,6 +223,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 2464ms;
     -webkit-animation-duration: 1176ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(13) {
     left: 91%;
@@ -108,6 +231,7 @@
     -webkit-animation: makeItRain 1000ms infinite ease-out;
     -webkit-animation-delay: 2429ms;
     -webkit-animation-duration: 1218ms;
+    animation-play-state: paused;
 }
 .confetti-piece:nth-child(odd) {
     background: #7431e8;
@@ -162,15 +286,16 @@
   100% {opacity:1;}
 }
 
-.greeting {
+#greeting {
   animation: fadeIn ease-in 3s;
   -webkit-animation: fadeIn ease-in 3s;
   -moz-animation: fadeIn ease-in 3s;
   -o-animation: fadeIn ease-in 3s;
   -ms-animation: fadeIn ease-in 3s;
+  animation-play-state: paused;
 }
 
-.wishing {
+#wishing {
   opacity: 0;
   animation: fadeIn ease-in 3s;
   -webkit-animation: fadeIn ease-in 3s;
@@ -184,6 +309,7 @@
   -ms-animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
+  animation-play-state: paused;
 }
 
 h1 {
@@ -351,7 +477,7 @@ h1 {
 }
 body {
 	 padding: 3em;
-	 background: #ccdbc8;
+	 background: white;
    overflow: hidden;
 }
  .flower {
@@ -367,6 +493,7 @@ body {
    margin-left: 12%;
 	 position: absolute;
 	 z-index: 10;
+   animation-play-state: paused;
 }
  .flower span {
 	 background: #b4d28c;
@@ -428,7 +555,7 @@ body {
 	 bottom: 0;
 	 width: 100%;
 	 height: 2em;
-	 background: #c7c7a1;
+	 background: var(--htmlafter);
 }
 
  .flower-0 {
