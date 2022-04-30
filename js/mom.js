@@ -14,5 +14,3 @@ function play() {
   }
   document.getElementById("start").style.display = 'none';
 }
-
-// BUTTON
