@@ -1,3 +1,3 @@
 # GcWan.github.io
 
-Website under construction!
+Website temporarily under construction!
