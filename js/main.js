@@ -180,28 +180,28 @@
    * Porfolio isotope and filter
    */
   window.addEventListener("load", () => {
-    let portfolioContainer = select(".portfolio-container");
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: ".portfolio-item",
+    let projectsContainer = select(".projects-container");
+    if (projectsContainer) {
+      let projectsIsotope = new Isotope(projectsContainer, {
+        itemSelector: ".projects-item",
       });
 
-      let portfolioFilters = select("#portfolio-flters li", true);
+      let projectsFilters = select("#projects-flters li", true);
 
       on(
         "click",
-        "#portfolio-flters li",
+        "#projects-flters li",
         function (e) {
           e.preventDefault();
-          portfolioFilters.forEach(function (el) {
+          projectsFilters.forEach(function (el) {
             el.classList.remove("filter-active");
           });
           this.classList.add("filter-active");
 
-          portfolioIsotope.arrange({
+          projectsIsotope.arrange({
             filter: this.getAttribute("data-filter"),
           });
-          portfolioIsotope.on("arrangeComplete", function () {
+          projectsIsotope.on("arrangeComplete", function () {
             AOS.refresh();
           });
         },
@@ -211,25 +211,25 @@
   });
 
   /**
-   * Initiate portfolio lightbox
+   * Initiate projects lightbox
    */
-  const portfolioLightbox = GLightbox({
-    selector: ".portfolio-lightbox",
+  const projectsLightbox = GLightbox({
+    selector: ".projects-lightbox",
   });
 
   /**
-   * Initiate portfolio details lightbox
+   * Initiate projects details lightbox
    */
-  const portfolioDetailsLightbox = GLightbox({
-    selector: ".portfolio-details-lightbox",
+  const projectsDetailsLightbox = GLightbox({
+    selector: ".projects-details-lightbox",
     width: "90%",
     height: "90vh",
   });
 
   /**
-   * Portfolio details slider
+   * Projects details slider
    */
-  new Swiper(".portfolio-details-slider", {
+  new Swiper(".projects-details-slider", {
     speed: 400,
     loop: true,
     autoplay: {
