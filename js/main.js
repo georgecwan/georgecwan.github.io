@@ -155,24 +155,7 @@
       loop: true,
       typeSpeed: 100,
       backSpeed: 50,
-      backDelay: 2000,
-    });
-  }
-
-  /**
-   * Skills animation
-   */
-  let skilsContent = select(".skills-content");
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: "80%",
-      handler: function (direction) {
-        let progress = select(".progress .progress-bar", true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute("aria-valuenow") + "%";
-        });
-      },
+      backDelay: 1500,
     });
   }
 
@@ -231,10 +214,10 @@
    */
   window.addEventListener("load", () => {
     AOS.init({
-      duration: 1000,
+      duration: 600,
       easing: "ease-in-out",
-      once: true,
-      mirror: false,
+      once: false,
+      mirror: true,
     });
   });
 
