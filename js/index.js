@@ -5,8 +5,6 @@
  * License: https://bootstrapmade.com/license/
  */
 (function () {
-  "use strict";
-
   /**
    * Easy selector helper function
    */
@@ -100,7 +98,7 @@
   });
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scrool with offset on links with a class name .scrollto
    */
   on(
     "click",
@@ -123,7 +121,7 @@
   );
 
   /**
-   * Scroll with ofset on page load with hash links in the url
+   * Scroll with offset on page load with hash links in the url
    */
   window.addEventListener("load", () => {
     if (window.location.hash) {
