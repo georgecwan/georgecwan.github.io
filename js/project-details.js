@@ -81,14 +81,19 @@
   new Swiper(".project-details-slider", {
     speed: 400,
     loop: true,
+    grabCursor: true,
     autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
+      delay: 3000,
+      disableOnInteraction: true,
     },
     pagination: {
       el: ".swiper-pagination",
       type: "bullets",
       clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 })();
