@@ -1,3 +1,3 @@
 # GcWan.github.io
 
-Website temporarily under construction!
+Personal Website for George Wan

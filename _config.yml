@@ -1,0 +1,6 @@
+# exclude:
+#   - css/
+#   - js/
+#   - img/
+#   - .gitignore
+#   - README.md
