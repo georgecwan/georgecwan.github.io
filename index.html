@@ -39,6 +39,7 @@
 
     <!-- Main CSS File -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -228,13 +229,13 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-8 col-lg-4 offset-2 offset-lg-0">
               <img src="img/uwaterloo.png" class="img-fluid" alt="">
             </div>
             <div class="col-lg-8 pt-lg-0 align-middle content">
               <h3>University of Waterloo</h3>
               <p class="fst-italic">
-                I am currently pursuing a Bachelor of Software Engineering
+                Waterloo, ON, Canada
               </p>
               <div class="row">
                 <div class="col-lg-6">
@@ -245,11 +246,7 @@
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
-                      <strong>Website:</strong> <span>www.example.com</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Phone:</strong> <span>+123 456 7890</span>
+                      <strong>Degree:</strong> <span>Bachelor of Software Engineering</span>
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
@@ -265,12 +262,7 @@
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
-                      <strong>Degree:</strong> <span>Bachelor of Software Engineering</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Email:</strong>
-                      <span>email@example.com</span>
+                      <strong>Honours:</strong> <span>Dean's Honours List</span>
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
@@ -300,9 +292,10 @@
             >
               <ul id="projects-flters">
                 <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-card">Card</li>
-                <li data-filter=".filter-web">Web</li>
+                <li data-filter=".filter-typescript">TypeScript</li>
+                <li data-filter=".filter-javascript">JavaScript</li>
+                <li data-filter=".filter-python">Python</li>
+                <li data-filter=".filter-website">Website</li>
               </ul>
             </div>
           </div>
@@ -312,7 +305,7 @@
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <div class="col-lg-4 col-md-6 projects-item filter-app">
+            <div class="col-lg-4 col-md-6 projects-item filter-typescript filter-python">
               <div class="projects-wrap">
                 <img
                   src="img/projects/imaginate.png"
@@ -321,14 +314,14 @@
                 />
                 <div class="projects-info">
                   <h4>Imaginate</h4>
-                  <p>A Chrome extension that does blah blah</p>
+                  <p>TypeScript browser extension that saves and edits images using Stable Diffusion and inpainting</p>
                   <div class="projects-links">
                     <a
-                      href="projects/template.html"
+                      href="projects/imaginate.html"
                       class="projects-details-lightbox"
                       data-gallery="projectsGallery"
                       data-glightbox="type: external"
-                      title="Project Details"
+                      title="Imaginate Details"
                       ><i class="bx bx-info-circle"></i
                     ></a>
                     <a
@@ -343,29 +336,33 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 projects-item filter-web">
+            <div class="col-lg-4 col-md-6 projects-item filter-python">
               <div class="projects-wrap">
                 <img
-                  src="img/projects/project-2.jpg"
+                  src="img/projects/jaguar.jpeg"
                   class="img-fluid"
-                  alt=""
+                  alt="Jaguar"
                 />
                 <div class="projects-info">
-                  <h4>Web 3</h4>
-                  <p>Web</p>
+                  <h4>Jaguar</h4>
+                  <p>
+                    Robotic pet that uses OpenCV to follow its owner and voice2json to process voice commands simultaneously through multithreading
+                  </p>
                   <div class="projects-links">
                     <a
-                      href="img/projects/project-2.jpg"
+                      href="projects/jaguar.html"
                       data-gallery="projectsGallery"
+                      data-glightbox="type: external"
                       class="projects-details-lightbox"
-                      title="Web 3"
+                      title="Jaguar Details"
                       ><i class="bx bx-info-circle"></i
                     ></a>
                     <a
-                      href="#"
+                      href="https://github.com/GcWan/jaguar"
+                      target="_blank"
                       class="projects-details-link"
                       data-glightbox="type: external"
-                      title="Project Details"
+                      title="GitHub"
                       ><i class="bx bxl-github"></i
                     ></a>
                   </div>
@@ -373,30 +370,34 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 projects-item filter-app">
+            <div class="col-lg-4 col-md-6 projects-item filter-javascript filter-python filter-website">
               <div class="projects-wrap">
                 <img
-                  src="img/projects/project-3.jpg"
+                  src="img/projects/betta.png"
                   class="img-fluid"
-                  alt=""
+                  alt="Betta"
                 />
                 <div class="projects-info">
-                  <h4>App 2</h4>
-                  <p>App</p>
+                  <h4>Betta</h4>
+                  <p>
+                    JavaScript browser extension that manages user focus by blocking a customizable list of websites
+                  </p>
                   <div class="projects-links">
                     <a
-                      href="img/projects/project-3.jpg"
+                      href="projects/jaguar.html"
                       data-gallery="projectsGallery"
+                      data-glightbox="type: external"
                       class="projects-details-lightbox"
-                      title="App 2"
-                      ><i class="bx bx-plus"></i
+                      title="Jaguar Details"
+                      ><i class="bx bx-info-circle"></i
                     ></a>
                     <a
-                      href="#"
+                      href="https://github.com/GcWan/jaguar"
+                      target="_blank"
                       class="projects-details-link"
                       data-glightbox="type: external"
-                      title="Project Details"
-                      ><i class="bx bx-link"></i
+                      title="GitHub"
+                      ><i class="bx bxl-github"></i
                     ></a>
                   </div>
                 </div>
