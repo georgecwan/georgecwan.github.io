@@ -12,7 +12,9 @@
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|
+      Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|
+      Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
 
@@ -125,7 +127,8 @@
           <div class="section-title">
             <h2>About</h2>
             <p>
-              Hi and welcome to my website! I'm George, a Software Engineering student at the University of Waterloo and a full stack engineer.
+              Hi and welcome to my website! I'm George, a Software Engineering student at the University of Waterloo
+              and a full stack engineer.
               My current focus is full stack development with particular interest in backend development and machine learning.
               Find out more about my past experiences and projects below!
             </p>
@@ -291,11 +294,11 @@
               data-aos-delay="100"
             >
               <ul id="projects-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-typescript">TypeScript</li>
-                <li data-filter=".filter-javascript">JavaScript</li>
+                <li data-filter="*:not(.filter-hidden)" class="filter-active">All</li>
+                <li data-filter=".filter-ts-js">TypeScript/JavaScript</li>
+                <li data-filter=".filter-websites">Websites</li>
                 <li data-filter=".filter-python">Python</li>
-                <li data-filter=".filter-website">Website</li>
+                <li data-filter=".filter-ai">AI</li>
               </ul>
             </div>
           </div>
@@ -305,7 +308,7 @@
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <div class="col-lg-4 col-md-6 projects-item filter-typescript filter-python">
+            <div class="col-lg-4 col-md-6 projects-item filter-ts-js filter-python filter-ai">
               <div class="projects-wrap">
                 <img
                   src="img/projects/imaginate.png"
@@ -336,7 +339,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 projects-item filter-python">
+            <div class="col-lg-4 col-md-6 projects-item filter-python filter-ai">
               <div class="projects-wrap">
                 <img
                   src="img/projects/jaguar.jpeg"
@@ -346,7 +349,8 @@
                 <div class="projects-info">
                   <h4>Jaguar</h4>
                   <p>
-                    Robotic pet that uses OpenCV to follow its owner and voice2json to process voice commands simultaneously through multithreading
+                    Robotic pet that uses OpenCV to follow its owner and voice2json to process voice commands
+                    simultaneously through multithreading
                   </p>
                   <div class="projects-links">
                     <a
@@ -370,7 +374,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 projects-item filter-javascript filter-python filter-website">
+            <div class="col-lg-4 col-md-6 projects-item filter-ts-js filter-python filter-websites">
               <div class="projects-wrap">
                 <img
                   src="img/projects/betta.png"
@@ -384,15 +388,15 @@
                   </p>
                   <div class="projects-links">
                     <a
-                      href="projects/jaguar.html"
+                      href="projects/betta.html"
                       data-gallery="projectsGallery"
                       data-glightbox="type: external"
                       class="projects-details-lightbox"
-                      title="Jaguar Details"
+                      title="Betta Details"
                       ><i class="bx bx-info-circle"></i
                     ></a>
                     <a
-                      href="https://github.com/GcWan/jaguar"
+                      href="https://github.com/GcWan/betta"
                       target="_blank"
                       class="projects-details-link"
                       data-glightbox="type: external"
@@ -404,180 +408,206 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 projects-item filter-card">
+            <div class="col-lg-4 col-md-6 projects-item filter-ts-js filter-websites">
               <div class="projects-wrap">
                 <img
-                  src="img/projects/project-4.jpg"
+                  src="img/projects/personal-website.png"
                   class="img-fluid"
-                  alt=""
+                  alt="Personal Website"
                 />
                 <div class="projects-info">
-                  <h4>Card 2</h4>
-                  <p>Card</p>
+                  <h4>Personal Website</h4>
+                  <p>
+                    This is the website that you are currently viewing
+                  </p>
                   <div class="projects-links">
                     <a
-                      href="img/projects/project-4.jpg"
+                      href="projects/personal-website.html"
                       data-gallery="projectsGallery"
-                      class="projects-details-lightbox"
-                      title="Card 2"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a
-                      href="#"
-                      class="project-details-link"
                       data-glightbox="type: external"
-                      title="Project Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 projects-item filter-web">
-              <div class="projects-wrap">
-                <img
-                  src="img/projects/project-5.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="projects-info">
-                  <h4>Web 2</h4>
-                  <p>Web</p>
-                  <div class="projects-links">
-                    <a
-                      href="img/projects/project-5.jpg"
-                      data-gallery="projectsGallery"
                       class="projects-details-lightbox"
-                      title="Web 2"
-                      ><i class="bx bx-plus"></i
+                      title="Personal Website Details"
+                      ><i class="bx bx-info-circle"></i
                     ></a>
                     <a
-                      href="#"
-                      class="project-details-link"
-                      data-glightbox="type: external"
-                      title="Project Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 projects-item filter-app">
-              <div class="projects-wrap">
-                <img
-                  src="img/projects/project-6.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="projects-info">
-                  <h4>App 3</h4>
-                  <p>App</p>
-                  <div class="projects-links">
-                    <a
-                      href="img/projects/project-6.jpg"
-                      data-gallery="projectsGallery"
-                      class="projects-details-lightbox"
-                      title="App 3"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a
-                      href="#"
-                      class="project-details-link"
-                      data-glightbox="type: external"
-                      title="Project Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 projects-item filter-card">
-              <div class="projects-wrap">
-                <img
-                  src="img/projects/project-7.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="projects-info">
-                  <h4>Card 1</h4>
-                  <p>Card</p>
-                  <div class="projects-links">
-                    <a
-                      href="img/projects/project-7.jpg"
-                      data-gallery="projectsGallery"
-                      class="projects-details-lightbox"
-                      title="Card 1"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a
-                      href="#"
-                      class="project-details-link"
-                      data-glightbox="type: external"
-                      title="Project Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 projects-item filter-card">
-              <div class="projects-wrap">
-                <img
-                  src="img/projects/project-8.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="projects-info">
-                  <h4>Card 3</h4>
-                  <p>Card</p>
-                  <div class="projects-links">
-                    <a
-                      href="img/projects/project-8.jpg"
-                      data-gallery="projectsGallery"
-                      class="projects-details-lightbox"
-                      title="Card 3"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a
-                      href="#"
-                      class="project-details-link"
-                      data-glightbox="type: external"
-                      title="Project Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 projects-item filter-web">
-              <div class="projects-wrap">
-                <img
-                  src="img/projects/project-9.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="projects-info">
-                  <h4>Web 3</h4>
-                  <p>Web</p>
-                  <div class="projects-links">
-                    <a
-                      href="img/projects/project-9.jpg"
-                      data-gallery="projectsGallery"
-                      class="projects-details-lightbox"
-                      title="Web 3"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a
-                      href="#"
+                      href="https://github.com/GcWan/gcwan.github.io"
+                      target="_blank"
                       class="projects-details-link"
                       data-glightbox="type: external"
-                      title="projects Details"
-                      ><i class="bx bx-link"></i
+                      title="GitHub"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 projects-item filter-python">
+              <div class="projects-wrap">
+                <img
+                  src="img/projects/dentaku.png"
+                  class="img-fluid"
+                  alt="Dentaku"
+                />
+                <div class="projects-info">
+                  <h4>Dentaku</h4>
+                  <p>
+                    Open Source Facebook Messenger Bot in Python created using fbchat API
+                  </p>
+                  <div class="projects-links">
+                    <a
+                      href="projects/dentaku.html"
+                      data-gallery="projectsGallery"
+                      data-glightbox="type: external"
+                      class="projects-details-lightbox"
+                      title="Betta Details"
+                      ><i class="bx bx-info-circle"></i
+                    ></a>
+                    <a
+                      href="https://github.com/GcWan/dentaku"
+                      target="_blank"
+                      class="projects-details-link"
+                      data-glightbox="type: external"
+                      title="GitHub"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 projects-item filter-python filter-ai">
+              <div class="projects-wrap">
+                <img
+                  src="img/projects/humanana.jpeg"
+                  class="img-fluid"
+                  alt="Humanana"
+                />
+                <div class="projects-info">
+                  <h4>Humanana</h4>
+                  <p>
+                    Tensorflow image classification model trained using Keras on around 5,000 images
+                    and accompanying iOS app which allows users to use the model with their own pictures
+                  </p>
+                  <div class="projects-links">
+                    <a
+                      href="projects/humanana.html"
+                      data-gallery="projectsGallery"
+                      data-glightbox="type: external"
+                      class="projects-details-lightbox"
+                      title="Humanana Details"
+                      ><i class="bx bx-info-circle"></i
+                    ></a>
+                    <a
+                      href="https://github.com/GcWan/humanana"
+                      target="_blank"
+                      class="projects-details-link"
+                      data-glightbox="type: external"
+                      title="GitHub"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 projects-item filter-python">
+              <div class="projects-wrap">
+                <img
+                  src="img/projects/rss2reddit.png"
+                  class="img-fluid"
+                  alt="RSS2Reddit"
+                />
+                <div class="projects-info">
+                  <h4>RSS2Reddit</h4>
+                  <p>
+                    Python tool that periodically scrapes RSS feeds and posts new articles to Reddit using the PRAW API
+                  </p>
+                  <div class="projects-links">
+                    <a
+                      href="projects/rss2reddit.html"
+                      data-gallery="projectsGallery"
+                      data-glightbox="type: external"
+                      class="projects-details-lightbox"
+                      title="RSS2Reddit Details"
+                      ><i class="bx bx-info-circle"></i
+                    ></a>
+                    <a
+                      href="https://github.com/GcWan/rss2reddit"
+                      target="_blank"
+                      class="projects-details-link"
+                      data-glightbox="type: external"
+                      title="GitHub"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 projects-item filter-python filter-websites filter-ai">
+              <div class="projects-wrap">
+                <img
+                  src="img/projects/craveslist.jpeg"
+                  class="img-fluid"
+                  alt="CravesList"
+                />
+                <div class="projects-info">
+                  <h4>CravesList</h4>
+                  <p>
+                    Flask website that leverages AssemblyAI's speech recognition API to find the best recipes
+                    given available ingredients
+                  </p>
+                  <div class="projects-links">
+                    <a
+                      href="projects/craveslist.html"
+                      data-gallery="projectsGallery"
+                      data-glightbox="type: external"
+                      class="projects-details-lightbox"
+                      title="CravesList Details"
+                      ><i class="bx bx-info-circle"></i
+                    ></a>
+                    <a
+                      href="https://github.com/GcWan/craveslist"
+                      target="_blank"
+                      class="projects-details-link"
+                      data-glightbox="type: external"
+                      title="GitHub"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 projects-item filter-python filter-ai filter-hidden">
+              <div class="projects-wrap">
+                <img
+                  src="img/projects/twitter-sentiment-analysis.png"
+                  class="img-fluid"
+                  alt="Twitter Sentiment Analysis"
+                />
+                <div class="projects-info">
+                  <h4>Twitter Sentiment Analysis</h4>
+                  <p>
+                    Sentiment Analysis results of tweets relating to the COVID-19 pandemic organized using Python Pandas
+                  </p>
+                  <div class="projects-links">
+                    <a
+                      href="projects/twitter-sentiment-analysis.html"
+                      data-gallery="projectsGallery"
+                      data-glightbox="type: external"
+                      class="projects-details-lightbox"
+                      title="Twitter Sentiment Analysis Details"
+                      ><i class="bx bx-info-circle"></i
+                    ></a>
+                    <a
+                      href="https://github.com/GcWan/twitter-sentiment-analysis"
+                      target="_blank"
+                      class="projects-details-link"
+                      data-glightbox="type: external"
+                      title="GitHub"
+                      ><i class="bx bxl-github"></i
                     ></a>
                   </div>
                 </div>
