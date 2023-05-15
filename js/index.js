@@ -161,6 +161,10 @@
         itemSelector: ".projects-item",
       });
 
+      projectsIsotope.arrange({
+        filter: "*:not(.filter-hidden)",
+      });
+
       let projectsFilters = select("#projects-flters li", true);
 
       on(

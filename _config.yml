@@ -3,3 +3,4 @@ exclude:
   - js/
   - img/
   - .gitignore
+  - README.md
