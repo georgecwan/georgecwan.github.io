@@ -216,9 +216,4 @@
       mirror: true,
     });
   });
-
-  /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
 })();
