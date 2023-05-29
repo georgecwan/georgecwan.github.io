@@ -89,5 +89,15 @@
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    on: {
+      slideChangeTransitionStart: function () {
+        const previousSlide =
+          document.getElementsByClassName("swiper-slide")[this.previousIndex];
+        if (previousSlide?.firstElementChild?.nodeName == "VIDEO") {
+          console.log(previousSlide.firstElementChild);
+          previousSlide.firstElementChild.pause();
+        }
+      },
+    },
   });
 })();
