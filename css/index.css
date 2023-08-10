@@ -727,6 +727,53 @@
   fill: #b125ea;
 }
 
+.skills .iconbox-django i {
+  color: #092e20;
+}
+
+.skills .iconbox-django:hover .icon path {
+  fill: #092e20;
+}
+
+.skills .iconbox-nodejs i {
+  color: #3c873a;
+}
+
+.skills .iconbox-nodejs:hover .icon path {
+  fill: #3c873a;
+}
+
+.skills .iconbox-react i {
+  color: #61dbfb;
+}
+
+.skills .iconbox-react:hover .icon path {
+  fill: #61dbfb;
+}
+
+.skills .iconbox-sql i {
+  color: #f29111;
+}
+
+.skills .iconbox-sql:hover .icon path {
+  fill: #f29111;
+}
+
+.skills .iconbox-cplusplus i {
+  color: #00599c;
+}
+
+.skills .iconbox-cplusplus:hover .icon path {
+  fill: #00599c;
+}
+
+.skills .iconbox-docker i {
+  color: #0db7ed;
+}
+.skills .iconbox-docker:hover .icon path {
+  fill: #0db7ed;
+}
+
 /*--------------------------------------------------------------
   # Contact
   --------------------------------------------------------------*/

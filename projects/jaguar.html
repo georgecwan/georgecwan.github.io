@@ -4,9 +4,36 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>GcWan - Imaginate</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <!-- Meta Tags -->
+    <title>George Wan - Jaguar</title>
+    <meta name="title" content="George Wan - Jaguar" />
+    <meta
+      name="description"
+      content="Robotic pet that uses OpenCV to follow its owner and voice2json to process voice commands
+      simultaneously through multithreading"
+    />
+    <meta name="author" content="George Wan" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gcwan.github.io/projects/jaguar" />
+    <meta property="og:title" content="George Wan - Jaguar" />
+    <meta
+      property="og:description"
+      content="Robotic pet that uses OpenCV to follow its owner and voice2json to process voice commands
+      simultaneously through multithreading"
+    />
+    <meta property="og:image" content="img/projects/jaguar.jpeg" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://gcwan.github.io/projects/jaguar"
+    />
+    <meta property="twitter:title" content="George Wan - Jaguar" />
+    <meta
+      property="twitter:description"
+      content="Robotic pet that uses OpenCV to follow its owner and voice2json to process voice commands
+      simultaneously through multithreading"
+    />
+    <meta property="twitter:image" content="img/projects/jaguar.jpeg" />
 
     <!-- Favicons -->
     <link href="../img/favicon.png" rel="icon" />
@@ -49,15 +76,22 @@
               <div class="project-details-slider swiper">
                 <div class="swiper-wrapper align-items-center">
                   <div class="swiper-slide">
-                    <img src="../img/projects/imaginate-1.jpg" alt="" />
+                    <img src="../img/projects/jaguar.jpeg" alt="" />
                   </div>
 
                   <div class="swiper-slide">
-                    <img src="../img/projects/imaginate-2.jpg" alt="" />
+                    <img src="../img/projects/jaguar-1.jpg" alt="" />
                   </div>
 
                   <div class="swiper-slide">
-                    <img src="../img/projects/imaginate-3.jpeg" alt="" />
+                    <video width="100%" controls>
+                      <source
+                        src="../img/projects/jaguar-2.mp4"
+                        type="video/mp4"
+                      />
+                      Unable to play video. Please enable JavaScript or upgrade
+                      to a browser that supports HTML5 video
+                    </video>
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -68,55 +102,42 @@
 
             <div class="col-lg-4">
               <div class="project-info">
-                <h3>Imaginate</h3>
+                <h3>Jaguar</h3>
                 <div class="container">
                   <div class="row">
                     <div class="col-4 p-0">
                       <ul>
                         <li><strong>Category</strong>:</li>
-                        <li><strong>Project date</strong>:</li>
                         <li><strong>GitHub URL</strong>:</li>
-                        <li><strong>Devpost URL</strong>:</li>
                         <li><strong>Built With</strong>:</li>
                       </ul>
                     </div>
                     <div class="col-8 p-0">
                       <ul>
-                        <li>CalHacks 2022</li>
-                        <li>October 2022</li>
+                        <li>Personal Project</li>
                         <li>
                           <a
-                            href="https://github.com/GcWan/imaginate"
+                            href="https://github.com/GcWan/jaguar"
                             target="_blank"
                             >github.com <i class="bi bi-box-arrow-up-right"></i
                           ></a>
                         </li>
-                        <li>
-                          <a
-                            href="https://devpost.com/software/chrome-extension-4ukvb6"
-                            target="_blank"
-                            >devpost.com <i class="bi bi-box-arrow-up-right"></i
-                          ></a>
-                        </li>
-                        <li>Stable Diffusion, TypeScript, Python, Flask</li>
+                        <li>Raspberry Pi, OpenCV, voice2json, Python</li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <h4>Description:</h4>
                 <p>
-                  Imaginate is a TypeScript gallery extension for Chromium
-                  browsers that allows you right click on any image on the web
-                  and save it to the extension gallery.
+                  Jaguar is a robotic pet that uses OpenCV to follow its owner
+                  and voice2json to process voice commands. The robot is able to
+                  detect and avoid basic obstacles, adjust the camera angle to
+                  keep its owner in frame, and respond to voice commands
+                  simultaneously through multithreading.
                   <br /><br />
-                  The images can then be modified by the Stable Diffusion AI
-                  model according to text prompts and strengths set by the user.
-                  An HTML5 canvas allows users to choose which areas of the
-                  image are affected by Stable Diffusion through a technique
-                  called "inpainting".
-                  <br /><br />
-                  The image and parameter data are sent to a Python Flask server
-                  that queries Replicate API and displays the edited images.
+                  The hardware is composed of a Raspberry Pi 4, 4 DC drivetrain
+                  motors, 2 servo motors, a Raspberry Pi camera module, a USB
+                  microphone, a buzzer, and 3 ultrasonic sensors.
                 </p>
               </div>
             </div>
