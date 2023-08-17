@@ -11,6 +11,8 @@
 
 .project-details .project-details-slider img {
   width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
 }
 
 .project-details .project-details-slider .swiper-pagination {
