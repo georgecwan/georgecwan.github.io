@@ -73,7 +73,7 @@
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .nav-menu {
   padding: 0;
@@ -159,7 +159,7 @@
 }
 
 /**
-  * Mobile Navigation 
+  * Mobile Navigation
   */
 .mobile-nav-toggle {
   position: fixed;
@@ -360,6 +360,11 @@
 --------------------------------------------------------------*/
 .about .section-title {
   padding-bottom: 0;
+}
+
+.about p {
+  max-width: 1000px;
+  margin: auto;
 }
 
 /*--------------------------------------------------------------
