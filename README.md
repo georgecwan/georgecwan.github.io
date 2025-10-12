@@ -2,8 +2,7 @@
 
 ### Hi, I'm George 👋
 - I'm a senior year Software Engineering student at the University of Waterloo
-- Currently, I am a full-stack software engineer at ZipRecruiter
-- Previously, I've worked as a full-stack software developer at Gem, Newfront Insurance, Deephaven Data Labs, NielsenIQ, and TD Asset Management
+- Previously, I've worked as a full-stack software developer at ZipRecruiter, Gem, Newfront Insurance, Deephaven Data Labs, NielsenIQ, and TD Asset Management
 - In addition to Software Engineering, I am also working towards a Minor in Computational Math as well as a Specialization in Artificial Intelligence
 - You can find out more about my work at [georgecwan.github.io](https://georgecwan.github.io), the website sourced from this repository
 - Currently looking for new grad software engineering roles for 2026!
